@@ -291,7 +291,7 @@
                             <button type="submit">Submit Now</button>
                         </form>
                     </div>
-                </div>
+		</div>
             </section>
         </main>
 
@@ -304,6 +304,22 @@
 		<script src ="headline.js"></script>
         <script src ="rippels.js"></script>
         <script src="java.js"></script>
+	<script src="https://smtpjs.com/v3/smtp.j"></script>
+	<script>
+		function sendEmail(){
+			Email.send(){
+				secureToken: "5ef9cc78-1673-48e3-a67a-0a56d513d8da",
+					To : 'chauvhankaushal@gmail.com',
+					From : documents.getElementById("email").value,
+					Subject : "New Contact form",
+					Body : "Name :" + documents.getElementById("name").value
+				+ "<br> Email :" + documents.getElementById("email").value
+				+ "<br> Message :" + documents.getElementById("message").value
+			}).then(
+				message => alert("Message sent successfully")
+			);
+			
+	</script>
        
     </body>
 </html>
